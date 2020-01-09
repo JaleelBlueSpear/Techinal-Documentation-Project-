@@ -1,0 +1,111 @@
+body {
+  margin: 0em;
+  padding: 0em;
+}
+#mainLayoutGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 3rem;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+  grid-gap: 0rem;
+}
+
+#slotOne {
+  grid-area: "header";
+}
+
+#titleComponent {
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  text-align: center;
+  background-color: #323330;
+
+  border-radius: .3rem;
+  height: 100%;
+}
+
+
+#titleComponent h1 {
+  background-color: #F0DB4F;
+  font-weight: inherit;
+  text-align: inherit;
+  width: 90%;
+  border-radius: .3rem;
+}
+
+
+#slotTwo {
+  grid-area: "main";
+}
+
+
+.linkComponentContainer  {
+
+  overflow-y: scroll;
+  height: 15rem;
+}
+
+.linkComponent {
+  text-decoration: none;
+}
+
+
+.linkComponent:hover {
+  text-decoration: underline;
+}
+
+.linkComponent div {
+  border-top: solid #000000 .1rem;
+  border-bottom: solid #000000 .1rem;
+  padding-left: .8rem;
+  background-color: #F0DB4F;
+
+}
+
+.linkComponent div p {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.mainContent {
+  background-color: #F0DB4F;
+  padding: .2rem;
+}
+
+
+
+.mainContent hr {
+  width: 90%;
+  border: 1px solid #000000;
+}
+
+
+.exampleBox {
+  background-color: #323330;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+
+  border-radius: .3rem;
+  border: solid .2rem #000000;
+}
+
+.exampleTextStyle {
+  font-weight: 100;
+
+  color: #EFEBDD;
+}
+
+#slotThree {
+  grid-area: footer;
+  background-color: #323330;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EFEBDD;
+  font-weight: 200;
+}

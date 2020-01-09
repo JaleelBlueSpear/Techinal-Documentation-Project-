@@ -1,0 +1,19 @@
+
+
+.linkComponent {
+  text-decoration: none;
+}
+
+.linkComponent div {
+  border-top: solid #000000 .1rem;
+  border-bottom: solid #000000 .1rem;
+  padding-left: .8rem;
+  background-color: #8892BF;
+
+}
+
+.linkComponent div p {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 200;
+}
