@@ -5,15 +5,18 @@ body {
 #mainLayoutGrid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 5rem 1fr 3rem;
+  grid-template-rows: 5rem 12rem 3fr 3rem;
   grid-template-areas: "header"
+                        "linkContainer"
                        "main"
                        "footer";
   grid-gap: 0rem;
 }
 
+
+
 #slotOne {
-  grid-area: "header";
+  grid-area: header;
 }
 
 #titleComponent {
@@ -22,7 +25,6 @@ body {
   font-weight: 100;
   text-align: center;
   background-color: #323330;
-
   border-radius: .3rem;
   height: 100%;
 }
@@ -37,16 +39,14 @@ body {
 }
 
 
-#slotTwo {
-  grid-area: "main";
-}
-
 
 .linkComponentContainer  {
-
   overflow-y: scroll;
   height: 15rem;
+  grid-area: linkContainer;
 }
+
+
 
 .linkComponent {
   text-decoration: none;
@@ -74,6 +74,8 @@ body {
 .mainContent {
   background-color: #F0DB4F;
   padding: .2rem;
+  grid-area: main;
+  overflow-y: scroll;
 }
 
 
